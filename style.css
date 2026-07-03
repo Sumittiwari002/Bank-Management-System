@@ -1,0 +1,338 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#4b79a1);
+
+    background-size:400% 400%;
+
+    animation:bg 15s ease infinite;
+
+    overflow-x:hidden;
+
+}
+
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+.dashboard{
+
+padding:20px;
+
+}
+
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:25px;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+color:#fff;
+
+}
+
+.profile{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.profile img{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+border:3px solid white;
+
+}
+
+.card-box{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+color:white;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.card-box:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 35px rgba(0,255,255,.2);
+
+}
+
+.card-box h2{
+
+font-size:34px;
+
+font-weight:700;
+
+margin-top:10px;
+
+}
+
+.glass-menu{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:25px;
+
+border-radius:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.glass-menu a{
+
+text-decoration:none;
+
+color:white;
+
+padding:15px;
+
+border-radius:12px;
+
+transition:.35s;
+
+font-weight:500;
+
+}
+
+.glass-menu a:hover{
+
+background:#00d4ff;
+
+color:#111;
+
+padding-left:25px;
+
+}
+
+.glass-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:35px;
+
+border-radius:25px;
+
+color:white;
+
+border:1px solid rgba(255,255,255,.1);
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.glass-card h2{
+
+margin-bottom:30px;
+
+font-weight:700;
+
+}
+
+.custom-input{
+
+height:55px;
+
+border-radius:14px;
+
+background:rgba(255,255,255,.1);
+
+border:1px solid rgba(255,255,255,.2);
+
+color:white;
+
+}
+
+.custom-input::placeholder{
+
+color:#ddd;
+
+}
+
+.custom-input:focus{
+
+background:rgba(255,255,255,.15);
+
+border-color:#00d4ff;
+
+box-shadow:0 0 20px rgba(0,212,255,.35);
+
+color:white;
+
+}
+
+.btn-save{
+
+    width:100%;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:600;
+    padding:0;
+
+background:linear-gradient(135deg,#00d4ff,#00ffb7);
+
+color:#111;
+
+transition:.4s;
+
+}
+
+.btn-save:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 30px rgba(0,212,255,.45);
+
+}
+
+#message{
+
+margin-top:20px;
+
+font-size:17px;
+
+font-weight:600;
+
+text-align:center;
+
+color:#9cffc4;
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+flex-direction:column;
+
+gap:20px;
+
+text-align:center;
+
+}
+
+}
+.form-select{
+    height:55px;
+    border-radius:14px;
+    background:rgba(255,255,255,.1);
+    color:white;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.form-select option{
+    color:#000;
+}
+
+
+label{
+    color:white;
+    font-weight:500;
+}
+
+input[type="radio"]{
+    accent-color:#00d4ff;
+    transform:scale(1.2);
+    margin-right:8px;
+}
+.table {
+    color: white ;
+}
+
+.table thead th {
+    color: #f6f8f8;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,.1);;
+
+}
+
+.table tbody td {
+    color: rgb(252, 252, 252);
+    border-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,.1);;
+}
+
+.table tbody tr:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+.table-responsive {
+    background: rgba(255,255,255,.05);
+    border-radius: 15px;
+    padding: 15px;
+}
+.credit {
+    color: #45f480 !important;
+    font-weight: bold;
+}
+
+.debit {
+    color: tomato !important;
+    font-weight: bold;
+}
